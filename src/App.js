@@ -22,8 +22,7 @@ import logoCF from './logoCloudFront.png';
 import './App.css';
 import { useFetch } from "react-async"
 
-// To be replaced by the endpoint of the API deployed through the CloudFormation Template
-const APIEndPoint = 'to be replaced with your api endpoint here'
+const APIEndPoint = process.env.REACT_APP_API_ENDPOINT
 
 function App() {
   return (
